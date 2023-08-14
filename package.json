@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
     "start:dev": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,11 +15,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.4.9",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "exceljs": "^4.3.0"
+    "exceljs": "^4.3.0",
+    "prettier": "^3.0.1"
   }
 }
